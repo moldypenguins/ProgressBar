@@ -57,7 +57,7 @@ var ProgressBar = new Class({
 		});
 		if(this.options.displayText) { 
 			this.text = new Element(this.options.displayElement)
-				.inject(this.container);
+				.inject(this.options.container);
 		}
 		this.set(this.options.startPercentage);
 	},
